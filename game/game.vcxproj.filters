@@ -17,6 +17,9 @@
     <Filter Include="Исходные файлы\json">
       <UniqueIdentifier>{13c9ea16-6742-4083-8e99-a771f21e036c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\include\Map">
+      <UniqueIdentifier>{cbec8bc2-6c5a-4548-b43a-6ae7e37f3941}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
@@ -45,9 +48,6 @@
     <ClInclude Include="Bot.h">
       <Filter>Исходные файлы\include</Filter>
     </ClInclude>
-    <ClInclude Include="Map.h">
-      <Filter>Исходные файлы\include</Filter>
-    </ClInclude>
     <ClInclude Include="Enums.h">
       <Filter>Исходные файлы\include</Filter>
     </ClInclude>
@@ -59,6 +59,12 @@
     </ClInclude>
     <ClInclude Include="JsonConverters.h">
       <Filter>Исходные файлы\json</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Исходные файлы\include\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Исходные файлы\include\Map</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

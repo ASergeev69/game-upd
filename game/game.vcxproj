@@ -137,6 +137,7 @@
   <ItemGroup>
     <ClInclude Include="AssetManager.h" />
     <ClInclude Include="Bot.h" />
+    <ClInclude Include="Cell.h" />
     <ClInclude Include="DataManager.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="JsonConverters.h" />

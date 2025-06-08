@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <nlohmann/json.hpp>
+#include "JsonConverters.h"
 #include "AssetManager.h"
 
 using nlohmann::json, std::cerr, std::ifstream;
@@ -42,22 +43,50 @@ void DataManager::loadPokemons(fs::path directory) {
     }
 }
 
-void DataManager::loadBots(fs::path directory)
-{
+void DataManager::loadBots(fs::path filePath) {
+    ifstream file(filePath);
+    if (!file.is_open()) {
+        cerr << "ERROR: Dir open: " << filePath << std::endl;
+        return;
+    }
 
+    json j;
+    file >> j;
+
+    for (const auto& botData : j) {
+        Bot bot;
+
+        std::string name = botData.at("name");
+        int x = botData.at("x");
+        int y = botData.at("y");
+
+        Pokemon team[3];
+        for (int i = 0; i < 3; ++i) {
+            Pokemon p = botData.at("team").at(i).get<Pokemon>();
+            string texName = botData.at("team").at(i).at("texture");
+            p.setTexture(AssetManager::getTexture(texName));
+            team[i] = p;
+        }
+
+        bot.setName(name);
+        bot.setPosition(x, y);
+        bot.setTeam(team);
+
+        allBots.push_back(bot);
+    }
 }
 
 const unordered_map<string, Pokemon>& DataManager::getAllPokemons()
 {
-
+    return allPokemons;
 }
 
 const vector<Bot>& DataManager::getAllBots()
 {
-
+    return allBots;
 }
 
 Map& DataManager::getCurrentMap()
 {
-
+    return currentMap;
 }

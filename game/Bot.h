@@ -12,9 +12,9 @@ private:
 	int x = 0, y = 0;
 	Pokemon team[3];
 public:
-	const string& getName() { return name; }
-	pair<int, int> getPos() { return {x, y}; }
-	Pokemon* getTeam() { return team; }
+	const std::string& getName() const { return name; }
+	std::pair<int, int> getPos() const { return { x, y }; }
+	const Pokemon* getTeam() const { return team; }
 
 	void setPosition(int newX, int newY) { x = newX; y = newY; }
 	void setName(const std::string& newName) { name = newName; }

@@ -7,7 +7,6 @@
 
 using std::vector, std::string;
 
-
 class Pokemon
 {
 private:

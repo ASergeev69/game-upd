@@ -6,5 +6,5 @@ using std::string;
 struct Move
 {
 	string name;
-	int damage;
+	int damage = 0;
 };

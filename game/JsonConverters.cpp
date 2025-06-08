@@ -1,5 +1,33 @@
 #include "JsonConverters.h"
 
+void to_json(json& j, const Bot& b) {
+    j = json{
+        {"name", b.getName()},
+        {"x", b.getPos().first},
+        {"y", b.getPos().second},
+        {"team", {
+            b.getTeam()[0],
+            b.getTeam()[1],
+            b.getTeam()[2]
+        }}
+    };
+}
+
+void from_json(const json& j, Bot& b) {
+    std::string name = j.at("name");
+    int x = j.at("x");
+    int y = j.at("y");
+
+    Pokemon team[3];
+    for (int i = 0; i < 3; ++i) {
+        team[i] = j.at("team").at(i).get<Pokemon>();
+    }
+
+    b.setName(name);
+    b.setPosition(x, y);
+    b.setTeam(team);
+}
+
 void to_json(json& j, const Move& m) {
     j = json{
         {"name", m.name},
