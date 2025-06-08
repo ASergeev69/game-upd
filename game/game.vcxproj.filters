@@ -11,6 +11,12 @@
     <Filter Include="Исходные файлы\src">
       <UniqueIdentifier>{492ab0e1-5876-4b21-825f-148a2ded4d33}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\include\Pokemon">
+      <UniqueIdentifier>{5d18ee08-fd99-4ed7-9ae9-50c36fa20103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\json">
+      <UniqueIdentifier>{13c9ea16-6742-4083-8e99-a771f21e036c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
@@ -21,6 +27,12 @@
     </ClCompile>
     <ClCompile Include="DataManager.cpp">
       <Filter>Исходные файлы\src</Filter>
+    </ClCompile>
+    <ClCompile Include="Enums.cpp">
+      <Filter>Исходные файлы\src</Filter>
+    </ClCompile>
+    <ClCompile Include="JsonConverters.cpp">
+      <Filter>Исходные файлы\json</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -36,8 +48,17 @@
     <ClInclude Include="Map.h">
       <Filter>Исходные файлы\include</Filter>
     </ClInclude>
-    <ClInclude Include="Pokemon.h">
+    <ClInclude Include="Enums.h">
       <Filter>Исходные файлы\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Pokemon.h">
+      <Filter>Исходные файлы\include\Pokemon</Filter>
+    </ClInclude>
+    <ClInclude Include="Move.h">
+      <Filter>Исходные файлы\include\Pokemon</Filter>
+    </ClInclude>
+    <ClInclude Include="JsonConverters.h">
+      <Filter>Исходные файлы\json</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

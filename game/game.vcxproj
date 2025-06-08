@@ -130,13 +130,18 @@
   <ItemGroup>
     <ClCompile Include="AssetManager.cpp" />
     <ClCompile Include="DataManager.cpp" />
+    <ClCompile Include="Enums.cpp" />
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="JsonConverters.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetManager.h" />
     <ClInclude Include="Bot.h" />
     <ClInclude Include="DataManager.h" />
+    <ClInclude Include="Enums.h" />
+    <ClInclude Include="JsonConverters.h" />
     <ClInclude Include="Map.h" />
+    <ClInclude Include="Move.h" />
     <ClInclude Include="Pokemon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
