@@ -31,3 +31,9 @@ pokemonType typeFromString(const string& str) {
     if (str == "Air")      return pokemonType::AIR;
     else                   return pokemonType::NORMAL;
 }
+
+Difficulty difficultyFromString(const string& str) {
+    if (str == "MEDIUM") return Difficulty::MEDIUM;
+    if (str == "HARD")   return Difficulty::HARD;
+    else                 return Difficulty::EASY;
+}

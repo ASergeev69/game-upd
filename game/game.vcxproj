@@ -102,7 +102,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
@@ -132,7 +132,10 @@
     <ClCompile Include="DataManager.cpp" />
     <ClCompile Include="Enums.cpp" />
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="GameState.cpp" />
     <ClCompile Include="JsonConverters.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="SaveUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetManager.h" />
@@ -140,9 +143,11 @@
     <ClInclude Include="Cell.h" />
     <ClInclude Include="DataManager.h" />
     <ClInclude Include="Enums.h" />
+    <ClInclude Include="GameState.h" />
     <ClInclude Include="JsonConverters.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Move.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Pokemon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

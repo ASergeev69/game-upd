@@ -1,26 +1,53 @@
 #pragma once
 #include "Enums.h"
-#include "raylib.h"
+#include "AssetManager.h"
 
-
-class Cell
-{
+class Cell {
 private:
-	int x, y;
-	mapType type;
-	Texture2D tex{};
-	bool isCanWalk;
+    mapType type = mapType::AIR;
+    std::string textureName = "air";
+    bool isCanWalk = true;
+
 public:
-	void use()
-	{
-		switch (type)
-		{
-		case mapType::HEAL:
-			break;
-		case mapType::ENEMY:
-			break;
-		}
-		type = mapType::AIR;
-		tex = "air";
-	}
+    Cell(mapType type_ = mapType::AIR)
+        : type(type_), isCanWalk(type_ != mapType::WALL) {
+        updateTextureName();
+    }
+
+    void updateTextureName() {
+        switch (type) {
+        case mapType::WALL: textureName = "wall"; break;
+        case mapType::HEAL: textureName = "heal"; break;
+        case mapType::ENEMY: textureName = "enemy"; break;
+        case mapType::PLAYER: textureName = "player"; break;
+        case mapType::AIR: default: textureName = "air"; break;
+        }
+    }
+
+    mapType getType() const noexcept {
+        return type;
+    }
+
+    const std::string& getTextureName() const noexcept {
+        return textureName;
+    }
+
+    bool isWalkable() const noexcept {
+        return isCanWalk;
+    }
+
+    void setType(mapType newType) {
+        type = newType;
+        updateTextureName();
+        isCanWalk = (type != mapType::WALL);
+    }
+
+    void setTextureName(const std::string& name) {
+        textureName = name;
+    }
+
+    void setWalkable(bool value) noexcept {
+        isCanWalk = value;
+    }
+
 };

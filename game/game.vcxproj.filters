@@ -20,37 +20,49 @@
     <Filter Include="Исходные файлы\include\Map">
       <UniqueIdentifier>{cbec8bc2-6c5a-4548-b43a-6ae7e37f3941}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\include\Managers">
+      <UniqueIdentifier>{77940c9d-147e-442c-8cc1-e68db0d3ddc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src\Map">
+      <UniqueIdentifier>{0aee48ad-8cc9-46a7-a781-09c765da9451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src\Managers">
+      <UniqueIdentifier>{a310d5f4-f3fc-4461-9e54-b32bdac9d600}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\include\Game">
+      <UniqueIdentifier>{7b910e55-37d0-4d78-a4ee-206b9e4c4773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src\Game">
+      <UniqueIdentifier>{38500b42-0615-492b-8153-be00347de650}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="AssetManager.cpp">
-      <Filter>Исходные файлы\src</Filter>
-    </ClCompile>
-    <ClCompile Include="DataManager.cpp">
-      <Filter>Исходные файлы\src</Filter>
-    </ClCompile>
-    <ClCompile Include="Enums.cpp">
-      <Filter>Исходные файлы\src</Filter>
-    </ClCompile>
     <ClCompile Include="JsonConverters.cpp">
       <Filter>Исходные файлы\json</Filter>
     </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Исходные файлы\src\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetManager.cpp">
+      <Filter>Исходные файлы\src\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManager.cpp">
+      <Filter>Исходные файлы\src\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Enums.cpp">
+      <Filter>Исходные файлы\src\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="SaveUtils.cpp">
+      <Filter>Исходные файлы\src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Исходные файлы\src\Game</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AssetManager.h">
-      <Filter>Исходные файлы\include</Filter>
-    </ClInclude>
-    <ClInclude Include="DataManager.h">
-      <Filter>Исходные файлы\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Bot.h">
-      <Filter>Исходные файлы\include</Filter>
-    </ClInclude>
-    <ClInclude Include="Enums.h">
-      <Filter>Исходные файлы\include</Filter>
-    </ClInclude>
     <ClInclude Include="Pokemon.h">
       <Filter>Исходные файлы\include\Pokemon</Filter>
     </ClInclude>
@@ -65,6 +77,24 @@
     </ClInclude>
     <ClInclude Include="Cell.h">
       <Filter>Исходные файлы\include\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetManager.h">
+      <Filter>Исходные файлы\include\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManager.h">
+      <Filter>Исходные файлы\include\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>Исходные файлы\include\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Bot.h">
+      <Filter>Исходные файлы\include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Исходные файлы\include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Исходные файлы\include\Game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

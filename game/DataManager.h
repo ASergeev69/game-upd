@@ -17,13 +17,10 @@ private:
 	static unordered_map<string, Pokemon> allPokemons;
 	static vector<Bot> allBots;
 
-	static Map currentMap;
-
 	static void loadPokemons(fs::path directory);
 	static void loadBots(fs::path directory);
 
 public:
 	static const unordered_map<string, Pokemon>& getAllPokemons();
 	static const vector<Bot>& getAllBots();
-	static Map& getCurrentMap();
 };

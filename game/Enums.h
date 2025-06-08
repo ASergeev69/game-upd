@@ -21,4 +21,6 @@ enum class GameScreen {
 
 string to_string(pokemonType type);
 string to_string(Difficulty d);
+
 pokemonType typeFromString(const string& str);
+Difficulty difficultyFromString(const string& str);

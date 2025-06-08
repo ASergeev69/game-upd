@@ -1,6 +1,6 @@
 #include "AssetManager.h"
-#include "raygui.h"
 #define RAYGUI_IMPLEMENTATION
+#include "raygui.h"
 
 unordered_map<string, Texture2D> AssetManager::textures;
 unordered_map<string, Music> AssetManager::sounds;
@@ -52,8 +52,6 @@ void AssetManager::loadStyles()
     GuiSetStyle(BUTTON, BASE_COLOR_DISABLED, redTransparentHex);
     GuiSetStyle(BUTTON, BORDER_COLOR_DISABLED, 0x00000000);
     GuiSetStyle(BUTTON, TEXT_COLOR_DISABLED, 0xFFFFFFFF);
-
-
 
     GuiSetStyle(TEXTBOX, BASE_COLOR_NORMAL, 0x00000000);
     GuiSetStyle(TEXTBOX, BORDER_COLOR_NORMAL, 0x00000000);

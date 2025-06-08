@@ -57,8 +57,6 @@ void DataManager::loadBots(fs::path filePath) {
         Bot bot;
 
         std::string name = botData.at("name");
-        int x = botData.at("x");
-        int y = botData.at("y");
 
         Pokemon team[3];
         for (int i = 0; i < 3; ++i) {
@@ -69,7 +67,6 @@ void DataManager::loadBots(fs::path filePath) {
         }
 
         bot.setName(name);
-        bot.setPosition(x, y);
         bot.setTeam(team);
 
         allBots.push_back(bot);
@@ -84,9 +81,4 @@ const unordered_map<string, Pokemon>& DataManager::getAllPokemons()
 const vector<Bot>& DataManager::getAllBots()
 {
     return allBots;
-}
-
-Map& DataManager::getCurrentMap()
-{
-    return currentMap;
 }
