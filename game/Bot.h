@@ -3,8 +3,6 @@
 #include <utility>
 #include "Pokemon.h"
 
-using std::pair;
-
 class Bot
 {
 private:
@@ -13,6 +11,9 @@ private:
 public:
 	const std::string& getName() const { return name; }
 	const Pokemon* getTeam() const { return team; }
+
+	const Pokemon& getPokemon(int index) const { return team[index]; }
+	Pokemon& getPokemon(int index) { return team[index]; }
 
 	void setName(const std::string& newName) { name = newName; }
 	void setTeam(const Pokemon* newTeam)

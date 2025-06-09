@@ -35,6 +35,12 @@
     <Filter Include="Исходные файлы\src\Game">
       <UniqueIdentifier>{38500b42-0615-492b-8153-be00347de650}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\include\Screen">
+      <UniqueIdentifier>{6b0f095d-adcc-4157-9f56-81e188553922}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\src\Screen">
+      <UniqueIdentifier>{8dae3585-3583-479d-8a6d-e5825fbdda02}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp">
@@ -59,6 +65,15 @@
       <Filter>Исходные файлы\src\Game</Filter>
     </ClCompile>
     <ClCompile Include="GameState.cpp">
+      <Filter>Исходные файлы\src\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuScreen.cpp">
+      <Filter>Исходные файлы\src\Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenManager.cpp">
+      <Filter>Исходные файлы\src\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Battle.cpp">
       <Filter>Исходные файлы\src\Game</Filter>
     </ClCompile>
   </ItemGroup>
@@ -94,6 +109,30 @@
       <Filter>Исходные файлы\include\Game</Filter>
     </ClInclude>
     <ClInclude Include="GameState.h">
+      <Filter>Исходные файлы\include\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenManager.h">
+      <Filter>Исходные файлы\include\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Исходные файлы\include\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuScreen.h">
+      <Filter>Исходные файлы\include\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="CharacterScreen.h">
+      <Filter>Исходные файлы\include\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="PokemonScreen.h">
+      <Filter>Исходные файлы\include\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="MapScreen.h">
+      <Filter>Исходные файлы\include\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleScreen.h">
+      <Filter>Исходные файлы\include\Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Battle.h">
       <Filter>Исходные файлы\include\Game</Filter>
     </ClInclude>
   </ItemGroup>

@@ -27,8 +27,8 @@ void AssetManager::loadSounds(const fs::path& directory)
 {
     for (const auto& entry : fs::directory_iterator(directory)) {
         if (entry.path().extension() == ".mp3" || entry.path().extension() == ".ogg" || entry.path().extension() == ".wav") {
-            std::string filename = entry.path().stem().string();     // без расширения
-            std::string fullPath = entry.path().string();            // полный путь
+            std::string filename = entry.path().stem().string();  
+            std::string fullPath = entry.path().string();
             sounds[filename] = LoadMusicStream(fullPath.c_str());
         }
     }

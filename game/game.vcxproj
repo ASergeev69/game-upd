@@ -129,26 +129,37 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="Battle.cpp" />
     <ClCompile Include="DataManager.cpp" />
     <ClCompile Include="Enums.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="GameState.cpp" />
     <ClCompile Include="JsonConverters.cpp" />
     <ClCompile Include="Map.cpp" />
+    <ClCompile Include="MenuScreen.cpp" />
     <ClCompile Include="SaveUtils.cpp" />
+    <ClCompile Include="ScreenManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="Battle.h" />
+    <ClInclude Include="BattleScreen.h" />
     <ClInclude Include="Bot.h" />
     <ClInclude Include="Cell.h" />
+    <ClInclude Include="CharacterScreen.h" />
     <ClInclude Include="DataManager.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="JsonConverters.h" />
     <ClInclude Include="Map.h" />
+    <ClInclude Include="MapScreen.h" />
+    <ClInclude Include="MenuScreen.h" />
     <ClInclude Include="Move.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Pokemon.h" />
+    <ClInclude Include="PokemonScreen.h" />
+    <ClInclude Include="Screen.h" />
+    <ClInclude Include="ScreenManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

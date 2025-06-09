@@ -24,15 +24,15 @@ public:
         }
     }
 
-    mapType getType() const noexcept {
+    mapType getType() const {
         return type;
     }
 
-    const std::string& getTextureName() const noexcept {
+    const std::string& getTextureName() const {
         return textureName;
     }
 
-    bool isWalkable() const noexcept {
+    bool isWalkable() const {
         return isCanWalk;
     }
 
@@ -46,7 +46,7 @@ public:
         textureName = name;
     }
 
-    void setWalkable(bool value) noexcept {
+    void setWalkable(bool value) {
         isCanWalk = value;
     }
 

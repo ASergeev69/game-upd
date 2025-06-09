@@ -21,6 +21,7 @@ private:
 	vector<Move> moves;
 public:
 
+    Move getMove(int index) { return moves.at(index); }
     void addMove(const Move& move) { moves.push_back(move); }
     void clearMoves() { moves.clear(); }
 
@@ -47,4 +48,6 @@ public:
 
     void setMoves(const std::vector<Move>& m) { moves = m; }
     const std::vector<Move>& getMoves() const { return moves; }
+
+    void takeDamage(float dmg) { HP = std::max(0.0, HP - dmg*1.0); }
 };

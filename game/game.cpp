@@ -1,20 +1,33 @@
-﻿// game.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
+﻿#include "ScreenManager.h"
+#include "raylib.h"
+#include "Enums.h"
+#include "MenuScreen.h"
+#include "CharacterScreen.h"
+#include "PokemonScreen.h"
+#include "MapScreen.h"
+#include "BattleScreen.h"
 
-#include <iostream>
+ScreenManager screenManager;
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+    InitWindow(800, 600, "Poke");
+
+    screenManager.Register(GameScreen::MENU, std::make_unique<MenuScreen>(&screenManager));
+    screenManager.Register(GameScreen::CHARACTER, std::make_unique<CharacterScreen>(&screenManager));
+    screenManager.Register(GameScreen::POKEMON, std::make_unique<PokemonScreen>(&screenManager));
+    screenManager.Register(GameScreen::MAP, std::make_unique<MapScreen>(&screenManager));
+    // зарегистрируй все сцены
+
+    screenManager.SetCurrent(GameScreen::MENU);
+
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        screenManager.Update();
+
+        screenManager.Draw();
+        EndDrawing();
+    }
+
+    CloseWindow();
+    return 0;
 }
-
-// Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
-// Отладка программы: F5 или меню "Отладка" > "Запустить отладкx"
-
-// Советы по началу работы 
-//   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
-//   2. В окне Team Explorer можно подключиться к системе управления версиями.
-//   3. В окне "Выходные данные" можно просматривать выходные данные сборки и другие сообщения.
-//   4. В окне "Список ошибок" можно просматривать ошибки.
-//   5. Последовательно выберите пункты меню "Проект" > "Добавить новый элемент", чтобы создать файлы кода, или "Проект" > "Добавить существующий элемент", чтобы добавить в проект существующие файлы кода.
-//   6. Чтобы снова открыть этот проект позже, выберите пункты меню "Файл" > "Открыть" > "Проект" и выберите SLN-файл.

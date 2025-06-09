@@ -16,7 +16,11 @@ enum class Difficulty {
 };
 
 enum class GameScreen {
-	MENU, CHARACTER_SELECT, POKEMON_SELECT, GAMEPLAY, BATTLE
+	MENU, CHARACTER, POKEMON, MAP, BATTLE
+};
+
+enum class Weather {
+	CLEAR, RAIN, SUN
 };
 
 string to_string(pokemonType type);
