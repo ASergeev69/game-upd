@@ -1,10 +1,10 @@
 #pragma once
 #include <nlohmann/json.hpp>
-#include "Pokemon.h"
-#include "Move.h"
-#include "Player.h"
-#include "GameState.h"
-#include "Bot.h"
+#include "../Pokemon/Pokemon.h"
+#include "../Pokemon/Move.h"
+#include "../Game/Player.h"
+#include "../Game/Bot.h"
+#include "../Game/GameState.h"
 
 using nlohmann::json;
 

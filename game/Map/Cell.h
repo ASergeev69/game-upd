@@ -1,6 +1,6 @@
 #pragma once
-#include "Enums.h"
-#include "AssetManager.h"
+#include "../Managers/Enums.h"
+#include "../Managers/AssetManager.h"
 
 class Cell {
 private:

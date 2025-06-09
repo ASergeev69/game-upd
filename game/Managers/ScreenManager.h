@@ -1,6 +1,6 @@
 #pragma once
 #include "Enums.h"
-#include "Screen.h"
+#include "../Screens/Screen.h"
 #include <unordered_map>
 #include <memory>
 

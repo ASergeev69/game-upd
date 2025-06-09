@@ -2,7 +2,7 @@
 #include <fstream>
 #include <iostream>
 #include <nlohmann/json.hpp>
-#include "JsonConverters.h"
+#include "../json/JsonConverters.h"
 #include "AssetManager.h"
 
 using nlohmann::json, std::cerr, std::ifstream;

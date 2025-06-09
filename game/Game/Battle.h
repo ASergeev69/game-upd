@@ -1,6 +1,6 @@
 #pragma once
 #include "Player.h"
-#include "Enums.h"
+#include "../Managers/Enums.h"
 #include "Bot.h"
 class Battle
 {

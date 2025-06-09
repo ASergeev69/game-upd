@@ -1,7 +1,7 @@
 #include <random>
 #include <iostream>
 #include "Map.h"
-#include "DataManager.h"
+#include "../Managers/DataManager.h"
 
 using std::cerr, std::random_device, std::mt19937, std::vector, std::pair;
 

@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 #include "raylib.h"
-#include "Enums.h"
+#include "../Managers/Enums.h"
 #include "Move.h"
 
 using std::vector, std::string;

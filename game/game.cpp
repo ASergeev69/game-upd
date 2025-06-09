@@ -1,11 +1,12 @@
-﻿#include "ScreenManager.h"
+﻿#include "Managers/AssetManager.h"
 #include "raylib.h"
-#include "Enums.h"
-#include "MenuScreen.h"
-#include "CharacterScreen.h"
-#include "PokemonScreen.h"
-#include "MapScreen.h"
-#include "BattleScreen.h"
+#include "Managers/Enums.h"
+#include "Managers/ScreenManager.h"
+#include "Screens/MenuScreen.h"
+#include "Screens/CharacterScreen.h"
+#include "Screens/PokemonScreen.h"
+#include "Screens/MapScreen.h"
+#include "Screens/BattleScreen.h"
 
 ScreenManager screenManager;
 

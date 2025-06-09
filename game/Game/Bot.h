@@ -1,7 +1,7 @@
 #pragma once
 #include <string>
 #include <utility>
-#include "Pokemon.h"
+#include "../Pokemon/Pokemon.h"
 
 class Bot
 {

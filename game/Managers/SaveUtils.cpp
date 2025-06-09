@@ -1,7 +1,7 @@
-#include "GameState.h"
+#include "../Game/GameState.h"
+#include "../json/JsonConverters.h"
 #include <iostream>
 #include <fstream>
-#include "JsonConverters.h"
 
 
 

@@ -1,6 +1,6 @@
 #pragma once
-#include "Pokemon.h"
-#include "Enums.h"
+#include "../Pokemon/Pokemon.h"
+#include "../Managers/Enums.h"
 
 class Player
 {

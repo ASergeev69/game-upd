@@ -3,9 +3,9 @@
 #include <vector>
 #include <string>
 #include <filesystem>
-#include "Pokemon.h"
-#include "Bot.h"
-#include "Map.h"
+#include "../Pokemon/Pokemon.h"
+#include "../Game/Bot.h"
+#include "../Map/Map.h"
 
 using std::vector, std::unordered_map, std::string;
 namespace fs = std::filesystem;
