@@ -11,6 +11,8 @@ ScreenManager screenManager;
 
 int main() {
     InitWindow(1536, 1024, "Poke");
+    InitAudioDevice();
+
 
     screenManager.Register(GameScreen::MENU, std::make_unique<MenuScreen>(&screenManager));/*
     screenManager.Register(GameScreen::CHARACTER, std::make_unique<CharacterScreen>(&screenManager));

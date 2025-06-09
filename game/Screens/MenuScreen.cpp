@@ -10,11 +10,16 @@ void MenuScreen::Init()
 {
     std::cout << "iniit";
     AssetManager::loadStyles();
-    AssetManager::loadTextures("assets/screens");
+    AssetManager::loadSounds("assets/menu");
+    AssetManager::loadTextures("assets/menu");
+    PlayMusicStream(AssetManager::getSound("menu"));
+    SetMusicVolume(AssetManager::getSound("menu"), 0.5f);
 }
 
 void MenuScreen::Update()
 {
+    UpdateMusicStream(AssetManager::getSound("menu"));
+
     if (GuiButton(continueButton, ""))
         std::cout << "test";
     if (GuiButton(savesButton, ""))
