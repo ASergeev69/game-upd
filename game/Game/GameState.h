@@ -8,7 +8,7 @@ private:
 	Player player;
 
 	Map map;
-	int score;
+	int score = -1;
 public:
 	const Player& getPlayer() const { return player; }
 	const Map& getMap() const { return map; }

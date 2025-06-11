@@ -1,0 +1,79 @@
+{
+  "player": {
+    "name": "Misty",
+    "difficulty": "HARD",
+    "x": 3,
+    "y": 6,
+    "team": [
+      {
+        "name": "Staryu",
+        "type": "WATER",
+        "maxHP": 95,
+        "HP": 60,
+        "exp": 35,
+        "level": 6,
+        "moves": [
+          {
+            "name": "Bubble Beam",
+            "damage": 28
+          },
+          {
+            "name": "Rapid Spin",
+            "damage": 14
+          }
+        ]
+      },
+      {
+        "name": "Psyduck",
+        "type": "WATER",
+        "maxHP": 85,
+        "HP": 70,
+        "exp": 18,
+        "level": 5,
+        "moves": [
+          {
+            "name": "Confusion",
+            "damage": 26
+          },
+          {
+            "name": "Scratch",
+            "damage": 10
+          }
+        ]
+      },
+      {
+        "name": "Togepi",
+        "type": "MAGIC",
+        "maxHP": 70,
+        "HP": 65,
+        "exp": 25,
+        "level": 4,
+        "moves": [
+          {
+            "name": "Charm",
+            "damage": 8
+          },
+          {
+            "name": "Metronome",
+            "damage": 20
+          }
+        ]
+      }
+    ]
+  },
+  "map": {
+    "grid": [
+      [ "AIR", "AIR", "AIR", "AIR", "AIR", "WALL", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR" ],
+      [ "AIR", "WALL", "WALL", "AIR", "AIR", "AIR", "AIR", "WALL", "AIR", "AIR", "AIR", "AIR" ],
+      [ "AIR", "AIR", "AIR", "HEAL", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR" ],
+      [ "AIR", "AIR", "AIR", "AIR", "AIR", "PLAYER", "AIR", "AIR", "WALL", "AIR", "AIR", "AIR" ],
+      [ "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR" ],
+      [ "AIR", "AIR", "AIR", "AIR", "WALL", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR" ],
+      [ "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR" ],
+      [ "AIR", "AIR", "AIR", "AIR", "AIR", "WALL", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR" ],
+      [ "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR" ],
+      [ "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR", "AIR" ]
+    ]
+  },
+  "score": 470
+}

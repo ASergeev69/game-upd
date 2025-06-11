@@ -1,4 +1,5 @@
 #include "JsonConverters.h"
+#include <iostream>
 
 void to_json(json& j, const Player& p) {
     j = json{
@@ -19,7 +20,7 @@ void from_json(const json& j, Player& p) {
     auto teamJson = j.at("team");
     for (int i = 0; i < 3; ++i) {
         Pokemon poke = teamJson.at(i).get<Pokemon>();
-        p.setPokemon(i, poke); // предполагается наличие setPokemon(i, Pokemon)
+        p.setPokemon(i, poke);
     }
 }
 
@@ -84,6 +85,27 @@ void from_json(const json& j, Pokemon& p) {
     }
 }
 
+void from_json(const json& j, mapType& t) {
+    std::string str = j.get<std::string>();
+    if (str == "AIR") t = mapType::AIR;
+    else if (str == "WALL") t = mapType::WALL;
+    else if (str == "PLAYER") t = mapType::PLAYER;
+    else if (str == "ENEMY") t = mapType::ENEMY;
+    else if (str == "HEAL") t = mapType::HEAL;
+    else t = mapType::AIR;
+}
+
+void to_json(json& j, const mapType& t) {
+    switch (t) {
+    case mapType::AIR: j = "AIR"; break;
+    case mapType::WALL: j = "WALL"; break;
+    case mapType::PLAYER: j = "PLAYER"; break;
+    case mapType::ENEMY: j = "ENEMY"; break;
+    case mapType::HEAL: j = "HEAL"; break;
+    }
+}
+
+
 void to_json(json& j, const Map& map) {
     std::vector<std::vector<mapType>> types;
 
@@ -119,10 +141,13 @@ void to_json(json& j, const GameState& state) {
 }
 
 void from_json(const json& j, GameState& state) {
+    std::cout << 1;
     Player player = j.at("player").get<Player>();
+    std::cout << 2;
     Map map = j.at("map").get<Map>();
+    std::cout << 3;
     int score = j.at("score").get<int>();
-    int level = j.at("level").get<int>();
+    std::cout << 4;
 
     state.getPlayer() = player;
     state.getMap() = map;

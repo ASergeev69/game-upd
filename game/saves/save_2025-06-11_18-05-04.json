@@ -1,0 +1,182 @@
+{
+    "map": {
+        "grid": [
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ]
+        ]
+    },
+    "player": {
+        "difficulty": "Easy",
+        "name": "",
+        "team": [
+            {
+                "HP": 0,
+                "exp": 0,
+                "level": 0,
+                "maxHP": 0,
+                "moves": [],
+                "name": "",
+                "type": "Normal"
+            },
+            {
+                "HP": 0,
+                "exp": 0,
+                "level": 0,
+                "maxHP": 0,
+                "moves": [],
+                "name": "",
+                "type": "Normal"
+            },
+            {
+                "HP": 0,
+                "exp": 0,
+                "level": 0,
+                "maxHP": 0,
+                "moves": [],
+                "name": "",
+                "type": "Normal"
+            }
+        ],
+        "x": 6,
+        "y": 5
+    },
+    "score": 0
+}

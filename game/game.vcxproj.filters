@@ -52,6 +52,9 @@
       <Filter>Screens</Filter>
     </ClCompile>
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="Screens\CharacterScreen.cpp">
+      <Filter>Screens</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game\Battle.h">

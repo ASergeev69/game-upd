@@ -8,6 +8,9 @@
 
 using nlohmann::json;
 
+void from_json(const json& j, mapType& t);
+void to_json(json& j, const mapType& t);
+
 void to_json(json& j, const Map& map);
 void from_json(const json& j, Map& map);
 

@@ -29,6 +29,7 @@
     <ClCompile Include="Managers\SaveUtils.cpp" />
     <ClCompile Include="Managers\ScreenManager.cpp" />
     <ClCompile Include="Map\Map.cpp" />
+    <ClCompile Include="Screens\CharacterScreen.cpp" />
     <ClCompile Include="Screens\MenuScreen.cpp" />
   </ItemGroup>
   <ItemGroup>
