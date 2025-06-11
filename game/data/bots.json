@@ -1,0 +1,1182 @@
+[
+  {
+    "name": "Bot_1",
+    "team": [
+      {
+        "name": "poke_7",
+        "type": "POISON",
+        "maxHP": 48,
+        "HP": 50,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Venom Sting",
+            "damage": 10
+          },
+          {
+            "name": "Acid Spit",
+            "damage": 8
+          }
+        ]
+      },
+      {
+        "name": "poke_1",
+        "type": "POISON",
+        "maxHP": 51,
+        "HP": 53,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Venom Sting",
+            "damage": 8
+          },
+          {
+            "name": "Acid Spit",
+            "damage": 6
+          }
+        ]
+      },
+      {
+        "name": "poke_10",
+        "type": "NORMAL",
+        "maxHP": 51,
+        "HP": 50,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 13
+          },
+          {
+            "name": "Bite",
+            "damage": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_2",
+    "team": [
+      {
+        "name": "poke_3",
+        "type": "AIR",
+        "maxHP": 54,
+        "HP": 42,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Wind Slash",
+            "damage": 6
+          },
+          {
+            "name": "Feather Attack",
+            "damage": 7
+          }
+        ]
+      },
+      {
+        "name": "poke_5",
+        "type": "POISON",
+        "maxHP": 41,
+        "HP": 40,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Venom Sting",
+            "damage": 7
+          },
+          {
+            "name": "Acid Spit",
+            "damage": 6
+          }
+        ]
+      },
+      {
+        "name": "poke_7",
+        "type": "ELECTRIC",
+        "maxHP": 51,
+        "HP": 57,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Spark",
+            "damage": 11
+          },
+          {
+            "name": "Volt Bite",
+            "damage": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_3",
+    "team": [
+      {
+        "name": "poke_3",
+        "type": "AIR",
+        "maxHP": 55,
+        "HP": 49,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Wind Slash",
+            "damage": 11
+          },
+          {
+            "name": "Feather Attack",
+            "damage": 6
+          }
+        ]
+      },
+      {
+        "name": "poke_3",
+        "type": "NORMAL",
+        "maxHP": 59,
+        "HP": 42,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 8
+          },
+          {
+            "name": "Bite",
+            "damage": 6
+          }
+        ]
+      },
+      {
+        "name": "poke_3",
+        "type": "WATER",
+        "maxHP": 47,
+        "HP": 51,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Aqua Jet",
+            "damage": 7
+          },
+          {
+            "name": "Splash Wave",
+            "damage": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_4",
+    "team": [
+      {
+        "name": "poke_9",
+        "type": "BUG",
+        "maxHP": 58,
+        "HP": 45,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Bug Bite",
+            "damage": 10
+          },
+          {
+            "name": "String Shot",
+            "damage": 11
+          }
+        ]
+      },
+      {
+        "name": "poke_5",
+        "type": "NORMAL",
+        "maxHP": 54,
+        "HP": 41,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 9
+          },
+          {
+            "name": "Bite",
+            "damage": 11
+          }
+        ]
+      },
+      {
+        "name": "poke_10",
+        "type": "WATER",
+        "maxHP": 48,
+        "HP": 58,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Aqua Jet",
+            "damage": 8
+          },
+          {
+            "name": "Splash Wave",
+            "damage": 10
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_5",
+    "team": [
+      {
+        "name": "poke_1",
+        "type": "NORMAL",
+        "maxHP": 45,
+        "HP": 46,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 6
+          },
+          {
+            "name": "Bite",
+            "damage": 9
+          }
+        ]
+      },
+      {
+        "name": "poke_2",
+        "type": "POISON",
+        "maxHP": 58,
+        "HP": 43,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Venom Sting",
+            "damage": 9
+          },
+          {
+            "name": "Acid Spit",
+            "damage": 6
+          }
+        ]
+      },
+      {
+        "name": "poke_2",
+        "type": "FIRE",
+        "maxHP": 57,
+        "HP": 47,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Flame Shot",
+            "damage": 10
+          },
+          {
+            "name": "Burn Claw",
+            "damage": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_6",
+    "team": [
+      {
+        "name": "poke_10",
+        "type": "AIR",
+        "maxHP": 59,
+        "HP": 56,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Wind Slash",
+            "damage": 10
+          },
+          {
+            "name": "Feather Attack",
+            "damage": 11
+          }
+        ]
+      },
+      {
+        "name": "poke_4",
+        "type": "NORMAL",
+        "maxHP": 40,
+        "HP": 57,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 12
+          },
+          {
+            "name": "Bite",
+            "damage": 11
+          }
+        ]
+      },
+      {
+        "name": "poke_3",
+        "type": "FIRE",
+        "maxHP": 49,
+        "HP": 41,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Flame Shot",
+            "damage": 8
+          },
+          {
+            "name": "Burn Claw",
+            "damage": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_7",
+    "team": [
+      {
+        "name": "poke_4",
+        "type": "NORMAL",
+        "maxHP": 50,
+        "HP": 48,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 9
+          },
+          {
+            "name": "Bite",
+            "damage": 6
+          }
+        ]
+      },
+      {
+        "name": "poke_3",
+        "type": "ELECTRIC",
+        "maxHP": 43,
+        "HP": 53,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Spark",
+            "damage": 9
+          },
+          {
+            "name": "Volt Bite",
+            "damage": 8
+          }
+        ]
+      },
+      {
+        "name": "poke_3",
+        "type": "ELECTRIC",
+        "maxHP": 59,
+        "HP": 55,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Spark",
+            "damage": 9
+          },
+          {
+            "name": "Volt Bite",
+            "damage": 13
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_8",
+    "team": [
+      {
+        "name": "poke_2",
+        "type": "NORMAL",
+        "maxHP": 40,
+        "HP": 51,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 8
+          },
+          {
+            "name": "Bite",
+            "damage": 10
+          }
+        ]
+      },
+      {
+        "name": "poke_4",
+        "type": "FIRE",
+        "maxHP": 45,
+        "HP": 43,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Flame Shot",
+            "damage": 11
+          },
+          {
+            "name": "Burn Claw",
+            "damage": 11
+          }
+        ]
+      },
+      {
+        "name": "poke_3",
+        "type": "POISON",
+        "maxHP": 44,
+        "HP": 56,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Venom Sting",
+            "damage": 7
+          },
+          {
+            "name": "Acid Spit",
+            "damage": 8
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_9",
+    "team": [
+      {
+        "name": "poke_7",
+        "type": "WATER",
+        "maxHP": 54,
+        "HP": 52,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Aqua Jet",
+            "damage": 12
+          },
+          {
+            "name": "Splash Wave",
+            "damage": 6
+          }
+        ]
+      },
+      {
+        "name": "poke_10",
+        "type": "POISON",
+        "maxHP": 43,
+        "HP": 52,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Venom Sting",
+            "damage": 10
+          },
+          {
+            "name": "Acid Spit",
+            "damage": 13
+          }
+        ]
+      },
+      {
+        "name": "poke_3",
+        "type": "AIR",
+        "maxHP": 53,
+        "HP": 50,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Wind Slash",
+            "damage": 13
+          },
+          {
+            "name": "Feather Attack",
+            "damage": 12
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_10",
+    "team": [
+      {
+        "name": "poke_1",
+        "type": "WATER",
+        "maxHP": 44,
+        "HP": 49,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Aqua Jet",
+            "damage": 9
+          },
+          {
+            "name": "Splash Wave",
+            "damage": 10
+          }
+        ]
+      },
+      {
+        "name": "poke_6",
+        "type": "NORMAL",
+        "maxHP": 60,
+        "HP": 41,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 10
+          },
+          {
+            "name": "Bite",
+            "damage": 10
+          }
+        ]
+      },
+      {
+        "name": "poke_5",
+        "type": "FIRE",
+        "maxHP": 46,
+        "HP": 48,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Flame Shot",
+            "damage": 12
+          },
+          {
+            "name": "Burn Claw",
+            "damage": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_11",
+    "team": [
+      {
+        "name": "poke_6",
+        "type": "NORMAL",
+        "maxHP": 44,
+        "HP": 53,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 6
+          },
+          {
+            "name": "Bite",
+            "damage": 12
+          }
+        ]
+      },
+      {
+        "name": "poke_4",
+        "type": "FIRE",
+        "maxHP": 59,
+        "HP": 41,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Flame Shot",
+            "damage": 12
+          },
+          {
+            "name": "Burn Claw",
+            "damage": 8
+          }
+        ]
+      },
+      {
+        "name": "poke_4",
+        "type": "AIR",
+        "maxHP": 47,
+        "HP": 43,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Wind Slash",
+            "damage": 7
+          },
+          {
+            "name": "Feather Attack",
+            "damage": 13
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_12",
+    "team": [
+      {
+        "name": "poke_2",
+        "type": "FIRE",
+        "maxHP": 49,
+        "HP": 49,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Flame Shot",
+            "damage": 8
+          },
+          {
+            "name": "Burn Claw",
+            "damage": 10
+          }
+        ]
+      },
+      {
+        "name": "poke_8",
+        "type": "POISON",
+        "maxHP": 49,
+        "HP": 44,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Venom Sting",
+            "damage": 13
+          },
+          {
+            "name": "Acid Spit",
+            "damage": 9
+          }
+        ]
+      },
+      {
+        "name": "poke_4",
+        "type": "NORMAL",
+        "maxHP": 59,
+        "HP": 50,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 11
+          },
+          {
+            "name": "Bite",
+            "damage": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_13",
+    "team": [
+      {
+        "name": "poke_2",
+        "type": "FIRE",
+        "maxHP": 59,
+        "HP": 47,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Flame Shot",
+            "damage": 13
+          },
+          {
+            "name": "Burn Claw",
+            "damage": 13
+          }
+        ]
+      },
+      {
+        "name": "poke_6",
+        "type": "NORMAL",
+        "maxHP": 40,
+        "HP": 42,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 9
+          },
+          {
+            "name": "Bite",
+            "damage": 7
+          }
+        ]
+      },
+      {
+        "name": "poke_5",
+        "type": "POISON",
+        "maxHP": 53,
+        "HP": 43,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Venom Sting",
+            "damage": 13
+          },
+          {
+            "name": "Acid Spit",
+            "damage": 13
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_14",
+    "team": [
+      {
+        "name": "poke_3",
+        "type": "AIR",
+        "maxHP": 57,
+        "HP": 47,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Wind Slash",
+            "damage": 11
+          },
+          {
+            "name": "Feather Attack",
+            "damage": 11
+          }
+        ]
+      },
+      {
+        "name": "poke_1",
+        "type": "FIRE",
+        "maxHP": 42,
+        "HP": 43,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Flame Shot",
+            "damage": 6
+          },
+          {
+            "name": "Burn Claw",
+            "damage": 9
+          }
+        ]
+      },
+      {
+        "name": "poke_1",
+        "type": "AIR",
+        "maxHP": 47,
+        "HP": 52,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Wind Slash",
+            "damage": 9
+          },
+          {
+            "name": "Feather Attack",
+            "damage": 11
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_15",
+    "team": [
+      {
+        "name": "poke_3",
+        "type": "ELECTRIC",
+        "maxHP": 49,
+        "HP": 41,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Spark",
+            "damage": 9
+          },
+          {
+            "name": "Volt Bite",
+            "damage": 10
+          }
+        ]
+      },
+      {
+        "name": "poke_8",
+        "type": "BUG",
+        "maxHP": 53,
+        "HP": 46,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Bug Bite",
+            "damage": 11
+          },
+          {
+            "name": "String Shot",
+            "damage": 7
+          }
+        ]
+      },
+      {
+        "name": "poke_1",
+        "type": "BUG",
+        "maxHP": 60,
+        "HP": 45,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Bug Bite",
+            "damage": 12
+          },
+          {
+            "name": "String Shot",
+            "damage": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_16",
+    "team": [
+      {
+        "name": "poke_4",
+        "type": "POISON",
+        "maxHP": 40,
+        "HP": 58,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Venom Sting",
+            "damage": 9
+          },
+          {
+            "name": "Acid Spit",
+            "damage": 12
+          }
+        ]
+      },
+      {
+        "name": "poke_4",
+        "type": "ELECTRIC",
+        "maxHP": 52,
+        "HP": 44,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Spark",
+            "damage": 6
+          },
+          {
+            "name": "Volt Bite",
+            "damage": 9
+          }
+        ]
+      },
+      {
+        "name": "poke_8",
+        "type": "NORMAL",
+        "maxHP": 57,
+        "HP": 44,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Tackle",
+            "damage": 8
+          },
+          {
+            "name": "Bite",
+            "damage": 9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_17",
+    "team": [
+      {
+        "name": "poke_1",
+        "type": "POISON",
+        "maxHP": 47,
+        "HP": 54,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Venom Sting",
+            "damage": 7
+          },
+          {
+            "name": "Acid Spit",
+            "damage": 6
+          }
+        ]
+      },
+      {
+        "name": "poke_8",
+        "type": "AIR",
+        "maxHP": 43,
+        "HP": 50,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Wind Slash",
+            "damage": 13
+          },
+          {
+            "name": "Feather Attack",
+            "damage": 7
+          }
+        ]
+      },
+      {
+        "name": "poke_8",
+        "type": "FIRE",
+        "maxHP": 52,
+        "HP": 45,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Flame Shot",
+            "damage": 6
+          },
+          {
+            "name": "Burn Claw",
+            "damage": 7
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_18",
+    "team": [
+      {
+        "name": "poke_6",
+        "type": "BUG",
+        "maxHP": 42,
+        "HP": 55,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Bug Bite",
+            "damage": 10
+          },
+          {
+            "name": "String Shot",
+            "damage": 9
+          }
+        ]
+      },
+      {
+        "name": "poke_4",
+        "type": "POISON",
+        "maxHP": 55,
+        "HP": 45,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Venom Sting",
+            "damage": 6
+          },
+          {
+            "name": "Acid Spit",
+            "damage": 10
+          }
+        ]
+      },
+      {
+        "name": "poke_2",
+        "type": "ELECTRIC",
+        "maxHP": 50,
+        "HP": 45,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Spark",
+            "damage": 6
+          },
+          {
+            "name": "Volt Bite",
+            "damage": 9
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_19",
+    "team": [
+      {
+        "name": "poke_6",
+        "type": "WATER",
+        "maxHP": 55,
+        "HP": 53,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Aqua Jet",
+            "damage": 11
+          },
+          {
+            "name": "Splash Wave",
+            "damage": 7
+          }
+        ]
+      },
+      {
+        "name": "poke_6",
+        "type": "AIR",
+        "maxHP": 41,
+        "HP": 51,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Wind Slash",
+            "damage": 12
+          },
+          {
+            "name": "Feather Attack",
+            "damage": 12
+          }
+        ]
+      },
+      {
+        "name": "poke_7",
+        "type": "BUG",
+        "maxHP": 58,
+        "HP": 60,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Bug Bite",
+            "damage": 10
+          },
+          {
+            "name": "String Shot",
+            "damage": 6
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bot_20",
+    "team": [
+      {
+        "name": "poke_2",
+        "type": "WATER",
+        "maxHP": 57,
+        "HP": 55,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Aqua Jet",
+            "damage": 11
+          },
+          {
+            "name": "Splash Wave",
+            "damage": 11
+          }
+        ]
+      },
+      {
+        "name": "poke_3",
+        "type": "WATER",
+        "maxHP": 40,
+        "HP": 55,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Aqua Jet",
+            "damage": 8
+          },
+          {
+            "name": "Splash Wave",
+            "damage": 12
+          }
+        ]
+      },
+      {
+        "name": "poke_4",
+        "type": "WATER",
+        "maxHP": 53,
+        "HP": 51,
+        "exp": 0,
+        "level": 3,
+        "moves": [
+          {
+            "name": "Aqua Jet",
+            "damage": 12
+          },
+          {
+            "name": "Splash Wave",
+            "damage": 8
+          }
+        ]
+      }
+    ]
+  }
+]

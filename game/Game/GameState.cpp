@@ -13,6 +13,10 @@ bool GameState::movePlayer(int dx, int dy) {
     // Обработка типов клеток
     switch (targetCell.getType()) {
     case mapType::ENEMY:
+        map.at(oldX, oldY).setType(mapType::AIR);
+        player.setX(newX);
+        player.setY(newY);
+        map.at(newX, newY).setType(mapType::PLAYER);
         return true;
         break;
     case mapType::HEAL:

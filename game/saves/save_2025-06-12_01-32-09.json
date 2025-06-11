@@ -2,74 +2,14 @@
     "map": {
         "grid": [
             [
-                "AIR",
-                "AIR",
-                "HEAL",
-                "HEAL",
-                "WALL",
-                "AIR",
-                "AIR",
-                "AIR",
-                "WALL",
-                "AIR"
-            ],
-            [
-                "AIR",
-                "AIR",
-                "AIR",
-                "ENEMY",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR"
-            ],
-            [
-                "AIR",
-                "AIR",
-                "WALL",
-                "AIR",
-                "HEAL",
-                "ENEMY",
-                "AIR",
-                "WALL",
-                "AIR",
-                "AIR"
-            ],
-            [
-                "AIR",
-                "AIR",
-                "WALL",
-                "AIR",
-                "AIR",
-                "AIR",
                 "WALL",
                 "WALL",
                 "ENEMY",
-                "AIR"
-            ],
-            [
                 "ENEMY",
-                "AIR",
-                "AIR",
+                "WALL",
                 "WALL",
                 "AIR",
-                "PLAYER",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR"
-            ],
-            [
                 "WALL",
-                "AIR",
-                "AIR",
-                "HEAL",
-                "AIR",
-                "WALL",
-                "AIR",
-                "HEAL",
                 "AIR",
                 "AIR"
             ],
@@ -81,7 +21,31 @@
                 "AIR",
                 "WALL",
                 "AIR",
+                "AIR",
+                "ENEMY",
+                "HEAL"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
                 "WALL",
+                "AIR",
+                "WALL",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
                 "AIR",
                 "WALL"
             ],
@@ -89,67 +53,103 @@
                 "AIR",
                 "WALL",
                 "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "PLAYER",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "WALL",
+                "WALL",
+                "AIR"
+            ],
+            [
+                "HEAL",
+                "AIR",
+                "HEAL",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "WALL",
+                "AIR"
+            ],
+            [
+                "AIR",
                 "WALL",
                 "AIR",
                 "AIR",
                 "AIR",
                 "AIR",
                 "ENEMY",
+                "AIR",
+                "AIR",
                 "AIR"
             ],
             [
+                "WALL",
+                "WALL",
+                "ENEMY",
                 "AIR",
+                "WALL",
                 "AIR",
                 "AIR",
                 "AIR",
                 "WALL",
-                "WALL",
-                "AIR",
-                "AIR",
-                "AIR",
                 "AIR"
             ]
         ]
     },
     "player": {
         "difficulty": "Easy",
-        "name": "342",
+        "name": "afsaf",
         "skinId": 0,
         "team": [
             {
-                "HP": 120,
+                "HP": 110,
                 "exp": 0,
                 "level": 1,
-                "maxHP": 120,
+                "maxHP": 110,
                 "moves": [
                     {
-                        "damage": 12,
-                        "name": "MoveA_3"
+                        "damage": 11,
+                        "name": "MoveA_2"
                     },
                     {
-                        "damage": 17,
-                        "name": "MoveB_3"
+                        "damage": 16,
+                        "name": "MoveB_2"
                     }
                 ],
-                "name": "poke_3",
+                "name": "poke_2",
                 "type": "Normal"
             },
             {
-                "HP": 140,
+                "HP": 160,
                 "exp": 0,
                 "level": 1,
-                "maxHP": 140,
+                "maxHP": 160,
                 "moves": [
                     {
-                        "damage": 14,
-                        "name": "MoveA_5"
+                        "damage": 16,
+                        "name": "MoveA_7"
                     },
                     {
-                        "damage": 19,
-                        "name": "MoveB_5"
+                        "damage": 21,
+                        "name": "MoveB_7"
                     }
                 ],
-                "name": "poke_5",
+                "name": "poke_7",
                 "type": "Normal"
             },
             {
@@ -171,7 +171,7 @@
                 "type": "Normal"
             }
         ],
-        "x": 6,
+        "x": 1,
         "y": 5
     },
     "score": 0

@@ -5,6 +5,7 @@
 #include "Screens/CharacterScreen.h"
 #include "Screens/PokemonScreen.h"
 #include "Screens/MapScreen.h"
+#include "Managers/DataManager.h"
 #include "Screens/BattleScreen.h"
 #include <iostream>
 

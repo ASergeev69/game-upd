@@ -18,6 +18,9 @@ public:
 		this->enemy = enemy;
 	}
 
+	int getPlayerIndex() { return playerIndex; }
+	int getEnemyIndex() { return enemyIndex; }
+
 	void setPlayerIndex(int index) { playerIndex = index; }
 	void setEnemyIndex(int index) { enemyIndex = index; }
 
@@ -26,6 +29,8 @@ public:
 
 	bool isEnemyDead() const;
 	bool isPlayerDead() const;
+
+	bool isCurrentDead() const;
 };
 
 float GetTypeEffectiveness(pokemonType atk, pokemonType def);

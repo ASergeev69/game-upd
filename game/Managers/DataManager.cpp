@@ -26,12 +26,6 @@ void DataManager::loadPokemons(fs::path path)
         // Имя может дублироваться в ключе и внутри, но если внутри его нет — установить вручную:
         if (p.getName().empty()) p.setName(name);
 
-        // Подгружаем текстуру (если поле "texture" есть в JSON)
-        if (data.contains("texture")) {
-            std::string texName = data["texture"];
-            p.setTexture(AssetManager::getTexture(texName));
-        }
-
         allPokemons[name] = p;
     }
 }
@@ -54,8 +48,6 @@ void DataManager::loadBots(fs::path filePath) {
         Pokemon team[3];
         for (int i = 0; i < 3; ++i) {
             Pokemon p = botData.at("team").at(i).get<Pokemon>();
-            string texName = botData.at("team").at(i).at("texture");
-            p.setTexture(AssetManager::getTexture(texName));
             team[i] = p;
         }
 

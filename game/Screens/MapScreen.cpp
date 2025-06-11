@@ -16,6 +16,8 @@ void MapScreen::Init()
 {
     DataManager::loadBots("data/bots.json");
     AssetManager::loadTextures("assets/map");
+    AssetManager::loadTextures("assets/pokemon");
+    
 
     std::cout << manager->selectedState.getPlayer().getName() << " " << manager->selectedState.getPlayer().getSkinId() << " " << manager->selectedState.getPlayer().getPokemon(0).getName() <<
         " " << manager->selectedState.getPlayer().getPokemon(1).getName() << " " << manager->selectedState.getPlayer().getPokemon(2).getName() << std::endl;
@@ -56,7 +58,7 @@ void MapScreen::Update()
         enemy = manager->selectedState.movePlayer(-1, 0);
     }
     if (IsKeyPressed(KEY_ESCAPE)) {
-        enemy = showSettings = !showSettings; // переключение
+        showSettings = !showSettings; // переключение
     }
 
     if (enemy)
@@ -107,7 +109,9 @@ void MapScreen::Draw()
         float barY = y + 20;
         float barWidth = 120;
         float barHeight = 20;
-        float hpRatio = (float) (poke.getHP() / poke.getMaxHP());
+        float hpRatio = poke.getMaxHP() > 0 ?
+            static_cast<float>(poke.getHP()) / poke.getMaxHP() : 0.0f;
+        hpRatio = std::clamp(hpRatio, 0.0f, 1.0f);
 
         // Фон полосы
         DrawRectangle(barX, barY, barWidth, barHeight, DARKGRAY);

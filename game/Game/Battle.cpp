@@ -58,6 +58,11 @@ bool Battle::isPlayerDead() const
     return true;
 }
 
+bool Battle::isCurrentDead() const
+{
+    return player->getPokemon(playerIndex).getHP() <= 0;
+}
+
 bool Battle::isEnemyDead() const
 {
     for (int i{}; i < 3; ++i)
