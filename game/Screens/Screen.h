@@ -5,7 +5,6 @@
 
 class Screen {
 protected:
-    GameState selectedState;
     bool showSettings = false;
     float settingsVolume = 50.0f;
     bool settingsSaveRequested = false;
@@ -19,7 +18,7 @@ protected:
     Rectangle volumeSlider = { windowBounds.x + 40, windowBounds.y + 60, 320, 20 };
     Rectangle saveButton = { windowBounds.x + 100, windowBounds.y + 110, 200, 40 };
     Rectangle exitButton = { windowBounds.x + 100, windowBounds.y + 170, 200, 40 };
-    Rectangle closeButton = { windowBounds.x + 370, windowBounds.y + 10, 20, 20 };
+    Rectangle closeButton = { windowBounds.x + 378, windowBounds.y + 11, 22, 22 };
 
     std::string getTimestampedSaveName() {
         time_t now = time(nullptr);
@@ -51,6 +50,7 @@ public:
 
         if (GuiButton(exitButton, "Leave game")) {
             CloseWindow();
+            exit(0);
         }
 
         if (CheckCollisionPointRec(GetMousePosition(), closeButton) && IsMouseButtonPressed(MOUSE_LEFT_BUTTON)) {

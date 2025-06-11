@@ -1,0 +1,178 @@
+{
+    "map": {
+        "grid": [
+            [
+                "WALL",
+                "AIR",
+                "HEAL",
+                "AIR",
+                "AIR",
+                "AIR",
+                "ENEMY",
+                "WALL",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "ENEMY",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "WALL",
+                "AIR",
+                "AIR",
+                "WALL",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "WALL",
+                "AIR",
+                "WALL",
+                "WALL",
+                "HEAL",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "PLAYER",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "HEAL",
+                "HEAL",
+                "AIR",
+                "AIR",
+                "ENEMY",
+                "WALL",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "WALL",
+                "AIR",
+                "AIR",
+                "AIR",
+                "HEAL",
+                "AIR",
+                "AIR",
+                "AIR",
+                "ENEMY"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "WALL",
+                "WALL",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "ENEMY",
+                "WALL"
+            ]
+        ]
+    },
+    "player": {
+        "difficulty": "Easy",
+        "name": "sdgsdgsd",
+        "skinId": 0,
+        "team": [
+            {
+                "HP": 120,
+                "exp": 0,
+                "level": 1,
+                "maxHP": 120,
+                "moves": [
+                    {
+                        "damage": 12,
+                        "name": "MoveA_3"
+                    },
+                    {
+                        "damage": 17,
+                        "name": "MoveB_3"
+                    }
+                ],
+                "name": "poke_3",
+                "type": "Normal"
+            },
+            {
+                "HP": 140,
+                "exp": 0,
+                "level": 1,
+                "maxHP": 140,
+                "moves": [
+                    {
+                        "damage": 14,
+                        "name": "MoveA_5"
+                    },
+                    {
+                        "damage": 19,
+                        "name": "MoveB_5"
+                    }
+                ],
+                "name": "poke_5",
+                "type": "Normal"
+            },
+            {
+                "HP": 150,
+                "exp": 0,
+                "level": 1,
+                "maxHP": 150,
+                "moves": [
+                    {
+                        "damage": 15,
+                        "name": "MoveA_6"
+                    },
+                    {
+                        "damage": 20,
+                        "name": "MoveB_6"
+                    }
+                ],
+                "name": "poke_6",
+                "type": "Normal"
+            }
+        ],
+        "x": 6,
+        "y": 5
+    },
+    "score": 0
+}

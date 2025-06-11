@@ -12,6 +12,7 @@ private:
 	unordered_map<GameScreen, unique_ptr<Screen>> screens;
 	GameScreen current;
 public:
+    GameState selectedState;
     void Register(GameScreen id, unique_ptr<Screen> screen);
     void SetCurrent(GameScreen id);
 

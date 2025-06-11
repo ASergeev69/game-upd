@@ -10,7 +10,6 @@ MenuScreen::MenuScreen(ScreenManager* mgr) : manager(mgr) {}
 
 void MenuScreen::Init()
 {
-    std::cout << "iniit";
     AssetManager::loadStyles();
     AssetManager::loadSounds("assets/menu");
     AssetManager::loadTextures("assets/menu");
@@ -51,10 +50,10 @@ void MenuScreen::Update()
 
         if (listViewActive != -1 && listViewActive >= 0 && listViewActive < saveNames.size()) {
             selectedSaveIndex = listViewActive;
-            selectedState = saveList[saveNames[selectedSaveIndex]];
+            manager->selectedState = saveList[saveNames[selectedSaveIndex]];
             listViewActive = -1;
 
-            //manager->SetCurrent(GameScreen::MAP);
+            manager->SetCurrent(GameScreen::MAP);
         }
     }
 

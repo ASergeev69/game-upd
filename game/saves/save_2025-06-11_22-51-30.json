@@ -7,6 +7,64 @@
                 "AIR",
                 "AIR",
                 "AIR",
+                "HEAL",
+                "WALL",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "WALL",
+                "AIR",
+                "WALL",
+                "HEAL",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "WALL",
+                "AIR",
+                "AIR",
+                "AIR",
+                "WALL",
+                "ENEMY"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "ENEMY",
+                "HEAL",
+                "WALL",
+                "ENEMY",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR",
+                "PLAYER",
+                "AIR",
+                "AIR",
+                "AIR",
+                "AIR"
+            ],
+            [
+                "WALL",
+                "AIR",
+                "WALL",
                 "AIR",
                 "AIR",
                 "AIR",
@@ -19,7 +77,17 @@
                 "AIR",
                 "AIR",
                 "AIR",
+                "ENEMY",
                 "AIR",
+                "WALL",
+                "AIR",
+                "AIR",
+                "WALL",
+                "AIR"
+            ],
+            [
+                "AIR",
+                "WALL",
                 "AIR",
                 "AIR",
                 "AIR",
@@ -32,112 +100,12 @@
             [
                 "AIR",
                 "AIR",
+                "HEAL",
                 "AIR",
                 "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR"
-            ],
-            [
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR"
-            ],
-            [
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR"
-            ],
-            [
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR"
-            ],
-            [
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR"
-            ],
-            [
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR"
-            ],
-            [
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR"
-            ],
-            [
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
-                "AIR",
+                "WALL",
+                "ENEMY",
+                "HEAL",
                 "AIR",
                 "AIR"
             ]
@@ -145,33 +113,61 @@
     },
     "player": {
         "difficulty": "Easy",
-        "name": "",
+        "name": "342",
+        "skinId": 0,
         "team": [
             {
-                "HP": 0,
+                "HP": 120,
                 "exp": 0,
-                "level": 0,
-                "maxHP": 0,
-                "moves": [],
-                "name": "",
+                "level": 1,
+                "maxHP": 120,
+                "moves": [
+                    {
+                        "damage": 12,
+                        "name": "MoveA_3"
+                    },
+                    {
+                        "damage": 17,
+                        "name": "MoveB_3"
+                    }
+                ],
+                "name": "poke_3",
                 "type": "Normal"
             },
             {
-                "HP": 0,
+                "HP": 140,
                 "exp": 0,
-                "level": 0,
-                "maxHP": 0,
-                "moves": [],
-                "name": "",
+                "level": 1,
+                "maxHP": 140,
+                "moves": [
+                    {
+                        "damage": 14,
+                        "name": "MoveA_5"
+                    },
+                    {
+                        "damage": 19,
+                        "name": "MoveB_5"
+                    }
+                ],
+                "name": "poke_5",
                 "type": "Normal"
             },
             {
-                "HP": 0,
+                "HP": 180,
                 "exp": 0,
-                "level": 0,
-                "maxHP": 0,
-                "moves": [],
-                "name": "",
+                "level": 1,
+                "maxHP": 180,
+                "moves": [
+                    {
+                        "damage": 18,
+                        "name": "MoveA_9"
+                    },
+                    {
+                        "damage": 23,
+                        "name": "MoveB_9"
+                    }
+                ],
+                "name": "poke_9",
                 "type": "Normal"
             }
         ],

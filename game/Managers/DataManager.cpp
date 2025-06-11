@@ -10,10 +10,11 @@ using nlohmann::json, std::cerr, std::ifstream;
 unordered_map<string, Pokemon> DataManager::allPokemons;
 vector<Bot> DataManager::allBots;
 
-void DataManager::loadPokemons(fs::path directory) {
-    ifstream file(directory);
+void DataManager::loadPokemons(fs::path path)
+{
+    std::ifstream file(path);
     if (!file.is_open()) {
-        cerr << "ERROR: Dir open: " << directory << std::endl;
+        std::cerr << "ERROR: Dir open: " << path << std::endl;
         return;
     }
 
@@ -21,22 +22,14 @@ void DataManager::loadPokemons(fs::path directory) {
     file >> j;
 
     for (auto& [name, data] : j.items()) {
-        Pokemon p;
-        p.setName(name);
-        p.setType(typeFromString(data["type"]));
-        p.setMaxHP(data["maxHP"]);
-        p.setHP(data["HP"]);
-        p.setExp(data["exp"]);
-        p.setLevel(data["level"]);
+        Pokemon p = data.get<Pokemon>();
+        // Имя может дублироваться в ключе и внутри, но если внутри его нет — установить вручную:
+        if (p.getName().empty()) p.setName(name);
 
-        string texName = data["texture"];
-        p.setTexture(AssetManager::getTexture(texName));
-
-        for (const auto& m : data["moves"]) {
-            Move move;
-            move.name = m["name"];
-            move.damage = m["damage"];
-            p.addMove(move);
+        // Подгружаем текстуру (если поле "texture" есть в JSON)
+        if (data.contains("texture")) {
+            std::string texName = data["texture"];
+            p.setTexture(AssetManager::getTexture(texName));
         }
 
         allPokemons[name] = p;

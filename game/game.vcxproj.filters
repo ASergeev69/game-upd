@@ -55,6 +55,15 @@
     <ClCompile Include="Screens\CharacterScreen.cpp">
       <Filter>Screens</Filter>
     </ClCompile>
+    <ClCompile Include="Screens\PokemonScreen.cpp">
+      <Filter>Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\MapScreen.cpp">
+      <Filter>Screens</Filter>
+    </ClCompile>
+    <ClCompile Include="Screens\BattleScreen.cpp">
+      <Filter>Screens</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game\Battle.h">

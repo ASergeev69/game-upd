@@ -1,0 +1,182 @@
+{
+    "poke_1": {
+        "name": "poke_1",
+        "type": "NORMAL",
+        "maxHP": 100,
+        "HP": 100,
+        "exp": 0,
+        "level": 1,
+        "moves": [
+            {
+                "name": "MoveA_1",
+                "damage": 10
+            },
+            {
+                "name": "MoveB_1",
+                "damage": 15
+            }
+        ]
+    },
+    "poke_2": {
+        "name": "poke_2",
+        "type": "FIRE",
+        "maxHP": 110,
+        "HP": 110,
+        "exp": 0,
+        "level": 1,
+        "moves": [
+            {
+                "name": "MoveA_2",
+                "damage": 11
+            },
+            {
+                "name": "MoveB_2",
+                "damage": 16
+            }
+        ]
+    },
+    "poke_3": {
+        "name": "poke_3",
+        "type": "BUG",
+        "maxHP": 120,
+        "HP": 120,
+        "exp": 0,
+        "level": 1,
+        "moves": [
+            {
+                "name": "MoveA_3",
+                "damage": 12
+            },
+            {
+                "name": "MoveB_3",
+                "damage": 17
+            }
+        ]
+    },
+    "poke_4": {
+        "name": "poke_4",
+        "type": "GRASS",
+        "maxHP": 130,
+        "HP": 130,
+        "exp": 0,
+        "level": 1,
+        "moves": [
+            {
+                "name": "MoveA_4",
+                "damage": 13
+            },
+            {
+                "name": "MoveB_4",
+                "damage": 18
+            }
+        ]
+    },
+    "poke_5": {
+        "name": "poke_5",
+        "type": "WATER",
+        "maxHP": 140,
+        "HP": 140,
+        "exp": 0,
+        "level": 1,
+        "moves": [
+            {
+                "name": "MoveA_5",
+                "damage": 14
+            },
+            {
+                "name": "MoveB_5",
+                "damage": 19
+            }
+        ]
+    },
+    "poke_6": {
+        "name": "poke_6",
+        "type": "AIR",
+        "maxHP": 150,
+        "HP": 150,
+        "exp": 0,
+        "level": 1,
+        "moves": [
+            {
+                "name": "MoveA_6",
+                "damage": 15
+            },
+            {
+                "name": "MoveB_6",
+                "damage": 20
+            }
+        ]
+    },
+    "poke_7": {
+        "name": "poke_7",
+        "type": "POISON",
+        "maxHP": 160,
+        "HP": 160,
+        "exp": 0,
+        "level": 1,
+        "moves": [
+            {
+                "name": "MoveA_7",
+                "damage": 16
+            },
+            {
+                "name": "MoveB_7",
+                "damage": 21
+            }
+        ]
+    },
+    "poke_8": {
+        "name": "poke_8",
+        "type": "ELECTRIC",
+        "maxHP": 170,
+        "HP": 170,
+        "exp": 0,
+        "level": 1,
+        "moves": [
+            {
+                "name": "MoveA_8",
+                "damage": 17
+            },
+            {
+                "name": "MoveB_8",
+                "damage": 22
+            }
+        ]
+    },
+    "poke_9": {
+        "name": "poke_9",
+        "type": "AIR",
+        "maxHP": 180,
+        "HP": 180,
+        "exp": 0,
+        "level": 1,
+        "moves": [
+            {
+                "name": "MoveA_9",
+                "damage": 18
+            },
+            {
+                "name": "MoveB_9",
+                "damage": 23
+            }
+        ]
+    },
+    "poke_10": {
+        "name": "poke_10",
+        "type": "NORMAL",
+        "maxHP": 190,
+        "HP": 190,
+        "exp": 0,
+        "level": 1,
+        "moves": [
+            {
+                "name": "MoveA_10",
+                "damage": 19
+            },
+            {
+                "name": "MoveB_10",
+                "damage": 24
+            }
+        ]
+    }
+}

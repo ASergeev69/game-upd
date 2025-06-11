@@ -8,7 +8,7 @@ private:
 	Player player;
 
 	Map map;
-	int score = -1;
+	int score = 0;
 public:
 	const Player& getPlayer() const { return player; }
 	const Map& getMap() const { return map; }
@@ -20,7 +20,7 @@ public:
 	void setScore(int s) { score = s; }
 	void addScore(int value) { score += value; }
 
-	void movePlayer(int dX, int dY);
+	bool movePlayer(int dX, int dY);
 
 };
 

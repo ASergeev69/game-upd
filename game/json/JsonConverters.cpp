@@ -5,6 +5,7 @@ void to_json(json& j, const Player& p) {
     j = json{
         {"name", p.getName()},
         {"difficulty", to_string(p.getDifficulty())},
+        {"skinId", p.getSkinId()},
         {"x", p.getX()},
         {"y", p.getY()},
         {"team", {p.getPokemon(0), p.getPokemon(1), p.getPokemon(2)}}
@@ -13,15 +14,16 @@ void to_json(json& j, const Player& p) {
 
 void from_json(const json& j, Player& p) {
     p.setName(j.at("name").get<std::string>());
+
+    Pokemon loadedTeam[3];
+    for (int i = 0; i < 3; ++i)
+        loadedTeam[i] = j.at("team").at(i).get<Pokemon>();
+    p.setTeam(loadedTeam);
+
     p.setDifficulty(difficultyFromString(j.at("difficulty").get<std::string>()));
+    p.setSkinId(j.at("skinId").get<int>());
     p.setX(j.at("x").get<int>());
     p.setY(j.at("y").get<int>());
-
-    auto teamJson = j.at("team");
-    for (int i = 0; i < 3; ++i) {
-        Pokemon poke = teamJson.at(i).get<Pokemon>();
-        p.setPokemon(i, poke);
-    }
 }
 
 void to_json(json& j, const Bot& b) {
@@ -109,9 +111,9 @@ void to_json(json& j, const mapType& t) {
 void to_json(json& j, const Map& map) {
     std::vector<std::vector<mapType>> types;
 
-    for (int y = 0; y < 10; ++y) {
+    for (int y = 0; y < 9; ++y) {
         std::vector<mapType> row;
-        for (int x = 0; x < 12; ++x) {
+        for (int x = 0; x < 10; ++x) {
             row.push_back(map.at(x, y).getType());
         }
         types.push_back(row);
@@ -125,8 +127,8 @@ void to_json(json& j, const Map& map) {
 void from_json(const json& j, Map& map) {
     const auto& types = j.at("grid").get<std::vector<std::vector<mapType>>>();
 
-    for (int y = 0; y < 10; ++y) {
-        for (int x = 0; x < 12; ++x) {
+    for (int y = 0; y < 9; ++y) {
+        for (int x = 0; x < 10; ++x) {
             map.at(x, y).setType(types[y][x]);
         }
     }

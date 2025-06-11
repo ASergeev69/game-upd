@@ -64,7 +64,7 @@ unordered_map<string, GameState> loadAllSaves(const fs::path& directory) {
             in >> j;
 
             if (j.contains("player") && j.contains("map")) {
-                GameState gs = j.get<GameState>();
+                    GameState gs = j.get<GameState>();
                 result[file.path().filename().string()] = gs;
             }
         }
