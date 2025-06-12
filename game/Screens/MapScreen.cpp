@@ -58,7 +58,7 @@ void MapScreen::Update()
         enemy = manager->selectedState.movePlayer(-1, 0);
     }
     if (IsKeyPressed(KEY_ESCAPE)) {
-        showSettings = !showSettings; // переключение
+        showSettings = !showSettings;
     }
 
     if (enemy)
@@ -69,6 +69,22 @@ void MapScreen::Update()
         manager->SetCurrent(GameScreen::BATTLE);
     }
 
+
+    switch (manager->selectedState.getPlayer().getDifficulty())
+    {
+    case Difficulty::EASY:
+        if (manager->selectedState.getScore() == 5)
+            manager->SetCurrent(GameScreen::WIN); 
+        break;
+    case Difficulty::MEDIUM:
+        if (manager->selectedState.getScore() == 6)
+            manager->SetCurrent(GameScreen::WIN); 
+        break;
+    case Difficulty::HARD:
+        if (manager->selectedState.getScore() == 7)
+            manager->SetCurrent(GameScreen::WIN); 
+        break;
+    }
 }
 
 void MapScreen::Draw()
@@ -99,12 +115,10 @@ void MapScreen::Draw()
     for (int i = 0; i < 3; ++i) {
         Pokemon& poke = manager->selectedState.getPlayer().getPokemon(i);
         float x = 1040;
-        float y = 260 + i * 236; // Расстояние между покемонами: 236
+        float y = 260 + i * 236;
 
-        // Отрисовка текстуры покемона
         DrawTextureEx(AssetManager::getTexture(poke.getName()), { x, y }, 0, 2.0f, WHITE);
 
-        // Параметры полосы здоровья
         float barX = x + 25;
         float barY = y + 20;
         float barWidth = 120;
@@ -113,14 +127,10 @@ void MapScreen::Draw()
             static_cast<float>(poke.getHP()) / poke.getMaxHP() : 0.0f;
         hpRatio = std::clamp(hpRatio, 0.0f, 1.0f);
 
-        // Фон полосы
         DrawRectangle(barX, barY, barWidth, barHeight, DARKGRAY);
-        // Текущая полоса HP
         DrawRectangle(barX, barY, barWidth * hpRatio, barHeight, GREEN);
-        // Обводка
         DrawRectangleLines(barX, barY, barWidth, barHeight, BLACK);
 
-        // Уровень покемона
         DrawText(("Lvl " + std::to_string(poke.getLevel())).c_str(), barX, barY - 25, 20, WHITE);
     }
 

@@ -7,6 +7,7 @@
 #include "Screens/MapScreen.h"
 #include "Managers/DataManager.h"
 #include "Screens/BattleScreen.h"
+#include "Screens/WinScreen.h"
 #include <iostream>
 
 ScreenManager screenManager;
@@ -22,6 +23,7 @@ int main() {
     screenManager.Register(GameScreen::POKEMON, std::make_unique<PokemonScreen>(&screenManager));
     screenManager.Register(GameScreen::MAP, std::make_unique<MapScreen>(&screenManager));
     screenManager.Register(GameScreen::BATTLE, std::make_unique<BattleScreen>(&screenManager));
+    screenManager.Register(GameScreen::WIN, std::make_unique<WinScreen>(&screenManager));
 
 
     screenManager.SetCurrent(GameScreen::MENU);

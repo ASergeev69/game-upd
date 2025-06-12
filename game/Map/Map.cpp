@@ -13,7 +13,7 @@ const Cell& Map::at(int x, int y) const { return grid[y][x]; }
 
 
 bool Map::isReachable(int startX, int startY) const {
-    bool visited[9][10]{}; // максимум 100x100
+    bool visited[9][10]{};
     int w = width;
     int h = height;
 

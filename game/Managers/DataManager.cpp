@@ -23,7 +23,6 @@ void DataManager::loadPokemons(fs::path path)
 
     for (auto& [name, data] : j.items()) {
         Pokemon p = data.get<Pokemon>();
-        // »м€ может дублироватьс€ в ключе и внутри, но если внутри его нет Ч установить вручную:
         if (p.getName().empty()) p.setName(name);
 
         allPokemons[name] = p;

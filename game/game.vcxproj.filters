@@ -123,5 +123,8 @@
     <ClInclude Include="Screens\Screen.h">
       <Filter>Screens</Filter>
     </ClInclude>
+    <ClInclude Include="Screens\WinScreen.h">
+      <Filter>Screens</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -16,7 +16,7 @@ enum class Difficulty {
 };
 
 enum class GameScreen {
-	MENU, CHARACTER, POKEMON, MAP, BATTLE
+	MENU, CHARACTER, POKEMON, MAP, BATTLE, WIN
 };
 
 enum class Weather {

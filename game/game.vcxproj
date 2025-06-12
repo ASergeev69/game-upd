@@ -55,6 +55,7 @@
     <ClInclude Include="Screens\MenuScreen.h" />
     <ClInclude Include="Screens\PokemonScreen.h" />
     <ClInclude Include="Screens\Screen.h" />
+    <ClInclude Include="Screens\WinScreen.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

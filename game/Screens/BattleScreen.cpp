@@ -37,20 +37,19 @@ int BattleScreen::GetRandomAliveEnemyIndex() {
 }
 
 int BattleScreen::GetRandomMoveIndex() {
-    return GetRandomValue(0, 1); // допустим 2 атаки
+    return GetRandomValue(0, 1);
 }
 
 void BattleScreen::Update()
 {
     if (!currBattle->isPlayerDead() && !currBattle->isEnemyDead() && isPlayerTurn) {
-        // Выбор активного покемона
         if (IsKeyPressed(KEY_Z)) currBattle->setPlayerIndex(0);
         if (IsKeyPressed(KEY_X)) currBattle->setPlayerIndex(1);
         if (IsKeyPressed(KEY_C)) currBattle->setPlayerIndex(2);
 
-        // Атаки
+
         if ((IsKeyPressed(KEY_ONE) || GuiButton({ 933, 823, 270, 114 }, "")) && !currBattle->isCurrentDead()) {
-            currBattle->PlayerAttack(0); // обычная атака
+            currBattle->PlayerAttack(0);
             isPlayerTurn = false;
             waitingEnemyAction = true;
             enemyThinkTimer = 0.0f;
@@ -60,7 +59,7 @@ void BattleScreen::Update()
         }
         if ((IsKeyPressed(KEY_TWO) || GuiButton({ 1240, 823, 244, 114 }, "")) && count > 3 && !currBattle->isCurrentDead()) {
             count = 0;
-            currBattle->PlayerAttack(1); // спецатака
+            currBattle->PlayerAttack(1);
             isPlayerTurn = false;
             waitingEnemyAction = true;
             enemyThinkTimer = 0.0f;
@@ -70,21 +69,23 @@ void BattleScreen::Update()
     else if (!currBattle->isPlayerDead() && !currBattle->isEnemyDead() && waitingEnemyAction) {
         enemyThinkTimer += GetFrameTime();
 
-        // Фаза выбора цели
         if (enemyStep == 0 && enemyThinkTimer > 1.6f) {
             currBattle->setEnemyIndex(GetRandomAliveEnemyIndex());
             enemyStep++;
         }
-        // Фаза атаки
         else if (enemyStep == 1 && enemyThinkTimer > 1.2f) {
-            int moveIndex = GetRandomMoveIndex(); // 0 или 1
+            int moveIndex = GetRandomMoveIndex();
             currBattle->EnemyAttack(moveIndex);
             waitingEnemyAction = false;
             isPlayerTurn = true;
         }
     }
     else if (currBattle->isEnemyDead())
+    {
+        manager->selectedState.addScore(1);
         manager->SetCurrent(GameScreen::MAP);
+
+    }
     else if (currBattle->isPlayerDead())
         manager->SetCurrent(GameScreen::MENU);
 

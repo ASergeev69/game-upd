@@ -10,7 +10,6 @@ bool GameState::movePlayer(int dx, int dy) {
 
     Cell& targetCell = map.at(newX, newY);
 
-    // Обработка типов клеток
     switch (targetCell.getType()) {
     case mapType::ENEMY:
         map.at(oldX, oldY).setType(mapType::AIR);
@@ -28,14 +27,11 @@ bool GameState::movePlayer(int dx, int dy) {
 
     if (!targetCell.isWalkable()) return false;
 
-    // Сброс старой клетки
     map.at(oldX, oldY).setType(mapType::AIR);
 
-    // Перемещение игрока
     player.setX(newX);
     player.setY(newY);
 
-    // Назначение игрока в новую клетку
     map.at(newX, newY).setType(mapType::PLAYER);
 
     return false;
