@@ -1,3 +1,3 @@
 # game
 
-nado raylib.h and raygui.h use for it
+nado raylib.h and raygui.h and nlohmann/json.hpp use for it
