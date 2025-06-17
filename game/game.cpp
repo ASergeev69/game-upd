@@ -30,6 +30,7 @@ int main() {
 
     while (!WindowShouldClose())
     {
+        UpdateMusicStream(AssetManager::getSound("menu"));
         BeginDrawing();
         screenManager.Draw();
 

@@ -22,7 +22,6 @@ void MenuScreen::Init()
 
 void MenuScreen::Update()
 {
-    UpdateMusicStream(AssetManager::getSound("menu"));
     if (showSettings) {
         DrawSettingsPopup();
         //if (GuiButton(saveButton, "Save game"))
